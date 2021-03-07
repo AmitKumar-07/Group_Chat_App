@@ -24,11 +24,11 @@ const append = (message, position)=>{
 
 // Ask new user for his/her name and let the server know
  let name;
-//  do
-//  {
-//   name= prompt("Enter your name to join");
-//  }
-//   while(!name)
+ do
+ {
+  name= prompt("Enter your name to join");
+ }
+  while(!name)
 
 socket.emit('new-user-joined', name);
 
